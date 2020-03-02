@@ -1,0 +1,122 @@
+﻿<Window x:Class="Login_System.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login_System"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"    MinWidth="1000"
+        MinHeight="600" >
+
+    <Window.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="#a93575" Offset="0.0" />
+            <GradientStop Color="#d28115" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid  Margin="50" Background="Transparent" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle RadiusX="10" RadiusY="10" Grid.ColumnSpan="2"  >
+
+            <Rectangle.Fill>
+                White
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Rectangle>
+                <Rectangle.Fill>
+                    Orange
+                </Rectangle.Fill>
+            </Rectangle>
+            <Ellipse Fill="Orange" Margin="10,0" Grid.ColumnSpan="2"/>
+            <Image Source="Image\roseicon.png" Grid.ColumnSpan="2" Height="50" Width="50" Margin="-190,118,114,295"/>
+            <Label Height="100" Width="200" Margin="-30,-110,0,0" FontSize="25" Grid.ColumnSpan="2" Foreground="White"> GlowRose</Label>
+            <Label Height="100" Width="200" Margin="-30,10,0,0" FontSize="23" Grid.ColumnSpan="2" Foreground="White">Welcome to the</Label>
+            <Label Height="100" Width="200" Margin="-30,90,0,0" FontSize="23" Grid.ColumnSpan="2" Foreground="White">Florist Community</Label>
+         
+            <!--<Label FontSize="15" Grid.ColumnSpan="2" Foreground="White"> GlowRose\n</Label>-->
+        </Grid>
+        <!--<StackPanel Grid.Column="">
+            <Rectangle>
+                <Rectangle.Fill>
+                    Orange
+                </Rectangle.Fill>
+                <Ellipse Fill="#ffab24" Height="100" Width="200" StrokeThickness="2" Stroke="Black"/>
+
+            </Rectangle>
+        </StackPanel>-->
+
+        <Grid Grid.Column="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.Row="2" Margin="30,10" RadiusX="20" RadiusY="20" >
+                <Rectangle.Fill>
+                    LightGray
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Grid.Row="3"  Margin="30,10" RadiusX="20" RadiusY="20" >
+                <Rectangle.Fill>
+                    LightGray
+                </Rectangle.Fill>
+            </Rectangle>
+            <Border Grid.Row="4" Width="400" Height="40" CornerRadius="30" Background="Orange" BorderBrush="White"/>
+
+
+            <Border Margin="173,88,173,8"  Height="80"  Width="100"  BorderThickness="0">
+                <Image Source="Image/user.png" />
+            </Border>
+
+            <Label Grid.Row="1"  HorizontalContentAlignment="Center" FontSize="15" FontFamily="Comic Sans MS" Foreground="#8092b5" Content="Login below to get started"/>
+
+            <Grid  Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Image\mail.png" Width="30" Height="30" Margin="40,0,0,0"/>
+                <TextBox Grid.Column="1"  Margin="10,15,45,15" Foreground="Gray" Background="LightGray" BorderThickness="0" FontSize="15" Text="E-mail address" />
+            </Grid>
+            <Grid  Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Image\lock.png" Width="30" Height="30" Margin="40,0,0,0"/>
+                <PasswordBox Grid.Column="1"   Margin="10,15,45,15" Foreground="Gray" Background="LightGray" BorderThickness="0" FontSize="15"></PasswordBox>
+            </Grid>
+            <Button Grid.Row="4" Margin="45,15" Foreground="White" Background="#ffa621" BorderThickness="0" FontSize="15" Content="Login" />
+            <!--Background="#f2f3f4"-->
+
+            <!--<Button   Background="#ffa621" Grid.Row="4" Content="Login"/>-->
+            <!--BorderBrush="White"-->
+
+            <StackPanel Grid.Row="6"  Orientation="Horizontal" HorizontalAlignment="Center" Margin="124,0">
+                <Label HorizontalContentAlignment="Center" FontSize="15" FontFamily="Comic Sans MS" Foreground="#8092b5" Content = "New User?"/>
+                <Label HorizontalContentAlignment="Center" FontSize="15" FontFamily="Comic Sans MS" Foreground="#ffa621" Content = "Register"/>
+                <Label HorizontalContentAlignment="Center" FontSize="15" FontFamily="Comic Sans MS" Foreground="#8092b5" Content = "here"/>
+            </StackPanel>
+
+
+
+        </Grid>
+
+
+    </Grid>
+</Window>
